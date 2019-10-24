@@ -86,7 +86,7 @@ In this case, identifying the part of the html code that contains the table is a
 
 In the source code, search for the text of the page (e.g. _2017 rank_). Right above it you will see: `<table class="wikitable sortable"...">`. This is the CSS selector that contains the table. (You can also find this information by right-clicking anywhere on the table, and choosing _Inspect_).
 
-Now that we now what we're looking for, let's use `html_nodes()` to identify all the elements of the page that have that CSS class. (Note that we need to use a dot before the name of the class to indicate it's CSS.)
+Now that we now what we're looking for, let's use `html_nodes()` to identify all the elements of the page that have that CSS class. (Note that we need to use a DOT before the name of the class to indicate it's CSS.)
 
 ```{r}
 wiki <- html_nodes(html, '.wikitable')
